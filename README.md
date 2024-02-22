@@ -61,3 +61,22 @@ Replace '[input_text_file]' with the path to your notes file and '[deck_name]' w
 
 ## Contributing
 Contributions are welcome! I'm not much of a programmer yet, so this script leaves a lot to be desired. If you have ideas for improvements, bug fixes, or new features, feel free to fork this repository, make your changes, and submit a pull request.
+
+## TODO
+### User Interface Improvements
+- Implement a more-user friendly CLI with argument parsing, offering help messages, usage examples, and error handling.
+### File Handling and Formats
+- Extend the tool to read from various formats like Markdown, CSV, JSON, and Google Docs, in addition to plain text.
+- Before adding cards to Anki, generate a preview file (e.g., HTML or PDF) for user review, ensuring the content is formatted correctly.
+- Instead of stopping execution on the first error, log errors to a file and proceed with processing, giving a summary at the end.
+### Enhanced Text and Card Processing
+- Implement more sophisticated HTML character handling and support for images, audio files, and LaTeX formatting within cards.
+- Add options for how to handle duplicates, such as skipping, updating, or appending additional information to existing cards.
+- Integrate content validation to check for common mistakes or missing fields before attempting to add cards to Anki.
+### Anki Integration
+- Improve error handling for Anki Connect responses, providing clear feedback on connection issues or Anki API errors.
+- Allow users to create or select existing decks and models directly from the script, possibly including template customization.
+- Provide real-time feedback during the batch processing of cards, including progress indicators and summaries of added/failed cards.
+### Configuration and Customization
+- Allow users to save their preferences, such as default deck, model names, and encoding settings, in a configuration file.
+- Enable users to define custom models and templates directly from the script, adjusting fields and styling to their needs.
